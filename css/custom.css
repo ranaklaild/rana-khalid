@@ -1,0 +1,76 @@
+/*******************start of  about me section ******************/
+@media (max-width: 991px) {
+  .img-fluid {
+    max-width: 42% !important;
+  }
+
+  .parallax-background {
+    height: 72% !important;
+  }
+}
+
+@media (max-width: 991px) and (min-width:768px) {
+  .img-fluid {
+    max-width: 100% !important;
+  }
+
+  .parallax-background {
+    height: 100% !important;
+  }
+
+  .custom-top {
+    top: 102px;
+  }
+  .custom-d-1{
+          margin-top: 17% !important;
+    }
+}
+
+@media (max-width: 767px) {
+  .img-fluid {
+    max-width: 100% !important;
+  }
+
+  .parallax-background {
+    height: 109% !important;
+  }
+
+  .custom-d-1 {
+    display: none;
+  }
+
+  .custom-top {
+    max-width: 100% !important;
+    margin: auto;
+  }
+
+  .custom-d-2 {
+    display: block !important;
+        text-align: center;
+  }
+
+  .custom-name {
+    display: block !important;
+  }
+  .custom-font-size-1 {
+    font-size: 40px;
+    /* edited*/
+
+  }
+
+}
+.ltr{
+  direction: ltr;
+}
+/*******************end of about me section ******************/
+/*******************Start of Qr code *************************/
+.qr{
+  max-width: 40%;
+}
+@media only screen and (max-width: 768px) {
+  .qr{
+    max-width: 70%;
+  }
+  @
+}
+/*******************end of Qr code *************************/

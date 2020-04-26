@@ -1,0 +1,22 @@
+/*******************start of menu section ******************/
+@media (max-width: 991px){
+#header .header-nav-main nav > ul li a {
+      text-align: right;
+}
+}
+/*******************end of menu section ******************/
+/*******************start of about me section******************/
+.rtl{
+  direction: rtl;
+}
+/*******************end of about me section******************/
+/*******************start of skills section******************/
+
+.right{
+    right:0 !important;
+}
+.p-right{
+      padding-left: 0 !important;
+      padding-right: 25px !important;
+}
+/*******************end of skills section******************/
