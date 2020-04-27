@@ -67,7 +67,7 @@
 	</style>
 </head>
 
-<body data-spy="scroll" data-target=".wrapper-spy">
+<body data-spy="scroll" data-target=".wrapper-spy" onload="disableAutoplay()">
 
 	<div class="body">
 		<header id="header" class="header-narrow" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 88, 'stickySetTop': '0px', 'stickyChangeLogo': false}" style="min-height: 71px;">
@@ -423,7 +423,7 @@
 								<div class="col-12 col-sm-6 col-lg-3 isotope-item websites">
 									<div class="image-gallery-item mb-4 pb-3">
 										<div class="embed-responsive embed-responsive-16by9">
-												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/website-3.mp4" autoplay="false" autostart="false"></iframe>
+												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/website-3.mp4" autoplay="false" autostart="false" class="video-d"></iframe>
 											</div>
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
@@ -436,7 +436,7 @@
 								<div class="col-12 col-sm-6 col-lg-3 isotope-item websites">
 									<div class="image-gallery-item mb-4 pb-3">
 										<div class="embed-responsive embed-responsive-16by9">
-												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/website-4.mp4" autoplay="false" autostart="false"></iframe>
+												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/website-4.mp4" autoplay="false" autostart="false" class="video-d"></iframe>
 											</div>
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
@@ -449,7 +449,7 @@
 								<div class="col-12 col-sm-6 col-lg-3 isotope-item websites">
 									<div class="image-gallery-item mb-4 pb-3">
 										<div class="embed-responsive embed-responsive-16by9">
-												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/website-5.mp4" autoplay="false" autostart="false"></iframe>
+												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/website-5.mp4" autoplay="false" autostart="false" class="video-d"></iframe>
 											</div>
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
@@ -534,7 +534,7 @@
 								<div class="col-12 col-sm-6 col-lg-3 isotope-item montage">
 									<div class="image-gallery-item mb-4 pb-3">
 										<div class="embed-responsive embed-responsive-16by9">
-												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/video-1.mp4" autoplay="false" autostart="false"></iframe>
+												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/video-1.mp4" autoplay="false" autostart="false" class="video-d"></iframe>
 											</div>
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
@@ -547,7 +547,7 @@
 								<div class="col-12 col-sm-6 col-lg-3 isotope-item montage">
 									<div class="image-gallery-item mb-4 pb-3">
 										<div class="embed-responsive embed-responsive-16by9">
-												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/video-2.mp4" autoplay="false" autostart="false"></iframe>
+												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/video-2.mp4" autoplay="false" autostart="false" class="video-d"></iframe>
 											</div>
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
@@ -560,7 +560,7 @@
 								<div class="col-12 col-sm-6 col-lg-3 isotope-item montage">
 									<div class="image-gallery-item mb-4 pb-3">
 										<div class="embed-responsive embed-responsive-16by9">
-												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/video-3.mp4" autoplay="false" autostart="false"></iframe>
+												<iframe frameborder="0" allowfullscreen="" src="img/portfilo/video-3.mp4" autoplay="false" autostart="false" class="video-d"></iframe>
 											</div>
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
@@ -767,6 +767,14 @@
 });
 
 		        </script>
+						<script>
+							var vid = document.getElementsByClassName("video-d");
+							function disableAutoplay() {
+  vid.autoplay = false;
+  vid.load();
+}
+
+						</script>
 
 </body>
 
